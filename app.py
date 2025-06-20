@@ -54,5 +54,11 @@ def handle_message(event):
             )
         )
 
+
+@app.route("/", methods=['GET'])
+def home():
+    return '<html><body><h1>已啟動 linebot</h1></body></html>'
+
+
 if __name__ == "__main__":
     app.run()
